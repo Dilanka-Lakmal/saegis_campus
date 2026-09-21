@@ -59,3 +59,40 @@ main {
     color: #ffffff;
     background-color: var(--saegis-primary);
 }
+
+
+                                         /* Top Utility Bar Styles */
+
+.top-bar {
+    background-color: #000B76; /* Dark Blue from screenshot */
+    color: #ffffff;
+    padding: 8px 0;
+    font-size: 0.875rem;
+    font-family: inherit;
+}
+
+.top-bar-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.2s ease;
+}
+
+.top-bar-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.top-bar-link:hover,
+.top-bar-link a:hover {
+    color: #e2e8f0;
+    opacity: 0.9;
+}
+
+.top-bar-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
