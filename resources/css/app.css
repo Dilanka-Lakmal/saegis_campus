@@ -59,3 +59,39 @@ main {
     color: #ffffff;
     background-color: var(--saegis-primary);
 }
+
+
+                                         /* Top Utility Bar Styles */
+
+/* Top Bar Container */
+.top-bar {
+    background-color: #000B76 !important; /* Dark Blue */
+    color: #ffffff !important;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+}
+
+/* Links & Text */
+.top-bar a,
+.top-bar-link,
+.top-bar-link a,
+.top-bar span {
+    color: #ffffff !important;
+    text-decoration: none !important; /* Removes Underline */
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.top-bar a:hover {
+    color: #cbd5e1 !important;
+    text-decoration: none !important;
+}
+
+/* SVG Icons */
+.top-bar-icon {
+    width: 16px;
+    height: 16px;
+    fill: #ffffff !important;
+    flex-shrink: 0;
+}
