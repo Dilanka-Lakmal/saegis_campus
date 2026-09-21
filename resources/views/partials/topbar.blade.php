@@ -1,7 +1,7 @@
 <div class="top-bar">
     <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
         <!-- Left Side: Contact Information -->
-        <div class="top-bar-left d-flex align-items-center gap-4">
+        <div class="top-bar-left d-flex align-items-center gap-3">
             <!-- Email -->
             <a href="mailto:{{ $settings['campus_email'] ?? 'info@saegis.ac.lk' }}" class="top-bar-link">
                 <svg class="top-bar-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -27,7 +27,7 @@
 
         <!-- Right Side: Student Portal -->
         <div class="top-bar-right">
-            <a href="{{ route('portal') ?? '#' }}" class="top-bar-link">
+            <a href="{{ Route::has('portal') ? route('portal') : '#' }}" class="top-bar-link">
                 <svg class="top-bar-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                 </svg>
